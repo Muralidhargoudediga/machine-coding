@@ -1,0 +1,8 @@
+Design and implement a Simple document Service where users can create documents and read the same.
+A document has a name and associated string content <name{string}, content{string}>
+
+1. All documents are private when created.
+2. Owners of documents can grant access to other users
+3. Grants  can be made at global level as well. For example, if access is granted globally, then every user should have access to that document.
+4. Username will be just a string. Every action like create/read/edit must be made on behalf of a user
+5. Have different tiers. Hot tier reads should be served from memory. Cold tier reads should be served from the disk. Owner can specify which tier
